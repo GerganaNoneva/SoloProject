@@ -12,7 +12,7 @@ import NftCard from "../card/Card"
 
 const nft = {
   name: 'Clock',
-  likes: 1100,
+  likes:1000000,
   mediaUrl: '/images/nft.jpg',
   user: {
     avatar: {

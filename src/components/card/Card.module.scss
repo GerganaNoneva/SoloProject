@@ -1,42 +1,75 @@
-// Card.module.scss
+@use "../../styles/colors";
+
+@font-face {
+    font-family: 'Montserrat-Black';
+    src: url('../../fonts/Montserrat/static/Montserrat-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../../fonts/Montserrat/static/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
 .card {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 339px;
+    height: 443px;
+    padding: 15px;
+}
+
+.avatar {
+    align-items: left;
+}
+
+.mediaContainer {
+  padding: 15px auto;
+}
+
+.media {
+    width: 309px;
+    height: 286px;
+    object-fit: cover;
+    margin: 10px auto;
+    border-radius: 20px;
+}
+
+.details {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    width: 100%;
-    height: 200px;
-    margin-bottom: 20px;
-    .media {
-      width: 200px;
-      height: 200px;
-      object-fit: cover;
-    }
-    .info {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin-left: 20px;
-      .title {
-        font-size: 18px;
-        font-weight: bold;
-        margin-bottom: 10px;
-      }
-      .user {
-        display: flex;
-        align-items: center;
-        margin-bottom: 10px;
-        .MuiChip-root {
-          margin-left: 10px;
-        }
-      }
-      .price {
-        font-size: 14px;
-        font-weight: bold;
-        margin-bottom: 10px;
-      }
-      .likes {
-        background-color: lightgray;
-      }
-    }
-  }
-  
+    justify-content: space-between;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: left;
+}
+
+.title {
+  font-family: 'Montserrat-Black';
+  font-size: 16px;
+  color: white;
+  margin: 0 auto;
+  width: 100%;
+
+}
+
+.price{
+  font-family: 'Montserrat-Bold';
+  color: colors.$secondary_main;
+  margin: 0 auto;
+  font-size: 14px;
+
+
+}
+
+.likes {
+  background-color: lightgray;
+}
