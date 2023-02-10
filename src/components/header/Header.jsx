@@ -76,19 +76,17 @@ export default function Header() {
                 </Grid>
                 <Grid item xs={6}  >
                     <div className={classNames(styles.searchField)}>
-                            <SearchIcon />
+                        <SearchIcon />
                         <InputBase
                             placeholder="Find assets, users and activity..."
                             className={classes3.input}
                         />
                     </div>
                 </Grid>
-                <Grid item xs={4}>
-                    <Grid container spacing={0} justify="flex-end" alignItems={'center'} className={classNames(styles.buttonContainer)}>
+                <Grid item xs={4} spacing={0} justify="flex-end" alignItems={'center'} className={classNames(styles.buttonContainer)}>
                         <Grid item xs={4}><ButtonBase variant="contained" color="primary" className={classes1.fontFamily1}>Home</ButtonBase></Grid>
                         <Grid item xs={4}> <ButtonBase variant="contained" color="primary" className={classes1.fontFamily1}>Activity</ButtonBase></Grid>
                         <Grid item xs={4}> <Button variant="contained" color="primary"  className={classes2.fontFamily2} style={{ color: "white", fontSize: '16px' }}>EXPLORE</Button></Grid>
-                    </Grid>
                 </Grid>
             </Grid>
     )
