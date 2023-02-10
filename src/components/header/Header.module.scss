@@ -1,0 +1,32 @@
+@use "../../styles/colors";
+
+//Font searching field
+//font-family: 'Montserrat', sans-serif;
+//font-weight: 400;
+//font-size: 16px;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+//Font Home and Active buttons
+//font-family: 'Montserrat', sans-serif;
+//font-weight: 600;
+//font-size: 14px;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+//Font for EXPLORE Button
+//font-family - Laca
+//font-weight: 700
+//font-size: 16px;
+
+.searchField{
+    background-color: colors.$background_default;
+    width: 400px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
