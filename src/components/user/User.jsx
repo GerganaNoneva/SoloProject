@@ -6,8 +6,8 @@ export default function User ({ name = '', info = '', avatar = '', size = 55, ve
       <div className={styles.user}>
         <Avatar url={avatar} size={size} verified={verified} />
         <div className={styles.infoContainer}>
-            <p className={styles.name} style={{ fontSize: `1rem` }}>{name}</p>
-            <p className={styles.info} style={{ fontSize: `0.75rem` }}>{info}</p>
+            <p className={styles.name}>{name}</p>
+            <p className={styles.info}>{info}</p>
         </div>
       </div>
     );
