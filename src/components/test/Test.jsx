@@ -6,11 +6,12 @@ import classNames from "classnames";
 import Logo from "../logo/Logo"
 import Header from "../header/Header"
 import Avatar from "../avatar/Avatar"
+import User from "../user/User"
 
 export default function Test() {
   return (
     <div className={classNames(styles.wrapper)}>
-      <Avatar url='/images/avatar.png' verified size='200px'/>
+      <User name="Gery" info="134 items" avatar='/images/avatar.png' verified='true' />
     </div>
   );
 }
