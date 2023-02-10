@@ -10,7 +10,7 @@ import Avatar from "../avatar/Avatar"
 export default function Test() {
   return (
     <div className={classNames(styles.wrapper)}>
-      <Avatar verified url='/images/avatar.png'/>
+      <Avatar url='/images/avatar.png' verified size='200px'/>
     </div>
   );
 }

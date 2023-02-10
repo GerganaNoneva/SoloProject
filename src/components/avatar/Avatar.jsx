@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Avatar.module.scss';
 
 
-const Avatar = ({ size = 90, url, verified = false }) => {
+export default function Avatar ({ url, size = 90, verified = false }) {
   return (
     <div className={styles.avatar} style={{ width: size, height: size }}>
       <img className={styles.image} src={url} alt="avatar" style={{ width: size }} />
@@ -10,5 +10,3 @@ const Avatar = ({ size = 90, url, verified = false }) => {
     </div>
   );
 };
-
-export default Avatar;
