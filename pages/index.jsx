@@ -3,5 +3,5 @@ import Test from "../src/components/test/Test";
 
 
 export default function Index() {
-  return <Example/>;
+  return <Test/>;
 }
