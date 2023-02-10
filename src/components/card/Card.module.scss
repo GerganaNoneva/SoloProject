@@ -15,7 +15,7 @@
 }
 
 .card {
-    border-radius: 20px;
+    border-radius: 30px;
     display: flex;
     flex-direction: column;
     width: 339px;
@@ -29,6 +29,8 @@
 
 .mediaContainer {
   padding: 15px auto;
+  border-radius: 30px;
+
 }
 
 .media {
@@ -36,7 +38,7 @@
     height: 286px;
     object-fit: cover;
     margin: 10px auto;
-    border-radius: 20px;
+    border-radius: 30px;
 }
 
 .details {
