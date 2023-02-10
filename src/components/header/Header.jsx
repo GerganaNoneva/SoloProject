@@ -83,10 +83,10 @@ export default function Header() {
                         />
                     </div>
                 </Grid>
-                <Grid item xs={4} spacing={0} justify="flex-end" alignItems={'center'} className={classNames(styles.buttonContainer)}>
-                        <Grid item xs={4}><ButtonBase variant="contained" color="primary" className={classes1.fontFamily1}>Home</ButtonBase></Grid>
-                        <Grid item xs={4}> <ButtonBase variant="contained" color="primary" className={classes1.fontFamily1}>Activity</ButtonBase></Grid>
-                        <Grid item xs={4}> <Button variant="contained" color="primary"  className={classes2.fontFamily2} style={{ color: "white", fontSize: '16px' }}>EXPLORE</Button></Grid>
+                <Grid item xs={4} spacing={12} justify="flex-end" alignItems={'center'} className={classNames(styles.buttonContainer)}>
+                        <ButtonBase variant="contained" color="primary" className={classes1.fontFamily1}>Home</ButtonBase>
+                        <ButtonBase variant="contained" color="primary" className={classes1.fontFamily1}>Activity</ButtonBase>
+                        <Button variant="contained" color="primary"  className={classes2.fontFamily2} style={{ color: "white", fontSize: '16px' }}>EXPLORE</Button>
                 </Grid>
             </Grid>
     )
