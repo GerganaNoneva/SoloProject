@@ -16,10 +16,10 @@ export default function NftCard({
   currency
 }) {
   return (
-    <Card className={styles.card} style={{backgroundColor: '#181828', borderRadius: '30px'}}>
+    <Card className={styles.card} style={{backgroundColor: '#181828', borderRadius: '10%'}}>
         <Avatar url={avatarUrl} size={40} verified={verified}  className={styles.avatar}/>
-        <div className={styles.mediaContainer}> 
-          <CardMedia className={styles.media} style={{borderRadius: '30px'}} image={mediaUrl} title={name} />
+        <div className={styles.mediaContainer} style={{borderRadius: '10%'}}> 
+          <CardMedia className={styles.media} style={{borderRadius: '10%'}} image={mediaUrl} title={name} />
         </div>
         <div className={styles.details}>
           <div className={styles.info}>
