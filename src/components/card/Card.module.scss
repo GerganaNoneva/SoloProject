@@ -28,17 +28,13 @@
     align-items: left;
 }
 
-.mediaContainer {
-  padding: 15px auto;
-  border-radius: 15px !important;
-}
-
 .media {
     width: 309px;
     height: 286px;
     object-fit: cover;
     margin: 10px auto;
     border-radius: 15px !important;
+    padding: 15px auto !important;
 }
 
 .details {
@@ -87,4 +83,3 @@
   color: colors.$secondary_main !important;
   background-color: #1A2E2D !important;
 }
-// style={{color:'#24f25e', backgroundColor: 'transparent', margin: '10px auto'}}

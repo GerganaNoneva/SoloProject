@@ -18,9 +18,7 @@ export default function NftCard({
   return (
     <Card className={styles.card}>
         <Avatar url={avatarUrl} size={40} verified={verified}  className={styles.avatar}/>
-        <div className={styles.mediaContainer}> 
-          <CardMedia className={styles.media} image={mediaUrl} title={name} />
-        </div>
+        <CardMedia className={styles.media} image={mediaUrl} title={name} />
         <div className={styles.details}>
           <div className={styles.info}>
             <p className={styles.title}>{name}</p>
