@@ -30,6 +30,7 @@
 
 .mediaContainer {
   padding: 15px auto;
+  border-radius: 15px !important;
 }
 
 .media {
@@ -80,6 +81,10 @@
   font-family: 'Montserrat-Bold' !important;
   font-size: 14px !important;
 
-  //background-color: transparent(#24f25e);
 }
-//style={{color:'#24f25e', backgroundColor: '#1A2E2D', border:'1px solid #24f25e', padding:'10px 5px 10px 5px', margin: '10px auto'}}
+
+.icon {
+  color: colors.$secondary_main !important;
+  background-color: #1A2E2D !important;
+}
+// style={{color:'#24f25e', backgroundColor: 'transparent', margin: '10px auto'}}

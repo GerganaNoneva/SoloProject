@@ -28,7 +28,7 @@ export default function NftCard({
           </div>
           <div className={styles.likesContainer}>
             <Chip className={styles.likes}  
-            label={millify(likes)} color="primary" avatar={<FavoriteIcon  style={{color:'#24f25e', backgroundColor: 'transparent', margin: '10px auto'}} />}/>
+            label={millify(likes)} color="primary" avatar={<FavoriteIcon className={styles.icon} />}/>
           </div>
         </div>
     </Card>
