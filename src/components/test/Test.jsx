@@ -60,7 +60,7 @@ const cards = [
       "currency":"ETH"
    }
 ];*/
-
+/*
 const cards=[{
    name: 'Clock',
    likes:1000000,
@@ -74,8 +74,8 @@ const cards=[{
    price: '12.2',
    currency: 'ETH'
  }]
+*/
 
-/*
 const nft = {
   name: 'Clock',
   likes:1000000,
@@ -89,12 +89,12 @@ const nft = {
   price: '12.2',
   currency: 'ETH'
 };
-*/
+
 
 export default function Test() {
   return (
     <div className={classNames(styles.wrapper)}>
-      <Trending cards={cards}/>
+       <NftCard {...nft}/>
     </div>
   );
 }

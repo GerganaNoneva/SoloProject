@@ -15,7 +15,8 @@
 }
 
 .card {
-    border-radius: 10%;
+    border-radius: 15px !important;
+    background-color: colors.$background_paper !important;
     display: flex;
     flex-direction: column;
     width: 339px;
@@ -29,7 +30,6 @@
 
 .mediaContainer {
   padding: 15px auto;
-  border-radius: 10%;
 }
 
 .media {
@@ -37,7 +37,7 @@
     height: 286px;
     object-fit: cover;
     margin: 10px auto;
-    border-radius: 10%;
+    border-radius: 15px !important;
 }
 
 .details {
@@ -72,5 +72,14 @@
 }
 
 .likes {
-  background-color: lightgray;
+  background-color: #1A2E2D !important;
+  color: colors.$secondary_main !important;
+  border: 2px solid colors.$secondary_main !important;
+  padding: 15px 5px !important;
+  margin: 10px auto !important;
+  font-family: 'Montserrat-Bold' !important;
+  font-size: 14px !important;
+
+  //background-color: transparent(#24f25e);
 }
+//style={{color:'#24f25e', backgroundColor: '#1A2E2D', border:'1px solid #24f25e', padding:'10px 5px 10px 5px', margin: '10px auto'}}

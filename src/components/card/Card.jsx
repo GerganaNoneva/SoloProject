@@ -16,10 +16,10 @@ export default function NftCard({
   currency
 }) {
   return (
-    <Card className={styles.card} style={{backgroundColor: '#181828', borderRadius: '10%'}}>
+    <Card className={styles.card}>
         <Avatar url={avatarUrl} size={40} verified={verified}  className={styles.avatar}/>
-        <div className={styles.mediaContainer} style={{borderRadius: '10%'}}> 
-          <CardMedia className={styles.media} style={{borderRadius: '10%'}} image={mediaUrl} title={name} />
+        <div className={styles.mediaContainer}> 
+          <CardMedia className={styles.media} image={mediaUrl} title={name} />
         </div>
         <div className={styles.details}>
           <div className={styles.info}>
@@ -27,8 +27,7 @@ export default function NftCard({
             <p className={styles.price}>{price} {currency}</p>
           </div>
           <div className={styles.likesContainer}>
-            <Chip className={styles.likes} 
-            style={{color:'#24f25e', backgroundColor: '#1A2E2D', border:'1px solid #24f25e', padding:'10px 5px 10px 5px', margin: '10px auto'}} 
+            <Chip className={styles.likes}  
             label={millify(likes)} color="primary" avatar={<FavoriteIcon  style={{color:'#24f25e', backgroundColor: 'transparent', margin: '10px auto'}} />}/>
           </div>
         </div>
