@@ -14,7 +14,6 @@
 }
 
 .container {
-    border: 2px solid red;
     width: 100% !important;
     background-color: colors.$background_default;
 }
@@ -28,10 +27,4 @@
 .selectMenu{
     width: 20%;
     color: white !important;
-}
-
-.grid {
-    border: 2px solid red;
-    justify-content: space-between !important;
-    width: '100%' !important;
 }

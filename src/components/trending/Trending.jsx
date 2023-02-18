@@ -4,7 +4,7 @@ import classNames from "classnames";
 import { Container, Grid, Menu, Select, MenuItem } from '@mui/material';
 import NftCard from '../card/Card';
 
-export default function Trending({cards}) {
+export default function Trending({cards=[]}) {
 
   return (
     <Container className={classNames(styles.container)} maxWidth="xl">
@@ -13,9 +13,9 @@ export default function Trending({cards}) {
       <Select label="this week" placeholder='this week' className={classNames(styles.selectMenu)}><MenuItem>This week</MenuItem></Select>
       </div>
      
-      <Grid container columnSpacing={3} className={classNames(styles.grid)}>
+      <Grid container style={{width: '100%'}} justifyContent="space-between">
         {cards.map((card, index) => (
-          <Grid item  xs={3} sm={6} md={3} key={index}>
+          <Grid item  xs={2} sm={6} md={3} key={index} columnGap={0}>
             <NftCard {...card} />
           </Grid>
         ))}
