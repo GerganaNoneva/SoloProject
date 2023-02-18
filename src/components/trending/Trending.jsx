@@ -4,57 +4,7 @@ import classNames from "classnames";
 import { Container, Grid, Menu, Select, MenuItem } from '@mui/material';
 import NftCard from '../card/Card';
 
-export default function Trending({ cards: [] }) {
-
- // const { cards: nftCards } = cards;
-  const nftCards=[ {
-    "name":"Ivy",
-    "user":{
-       "avatar":{
-          "url":"images/avatar.png"
-       },
-       "verified":true
-    },
-    "mediaUrl":"images/nft.jpg",
-    "price":1,
-    "currency":"ETH"
- },
- {
-    "name":"Judie",
-    "user":{
-       "avatar":{
-          "url":"images/avatar.png"
-       },
-       "verified":true
-    },
-    "mediaUrl":"images/nft.jpg",
-    "price":2.3,
-    "currency":"ETH"
- },
- {
-    "name":"Juniper",
-    "user":{
-       "avatar":{
-          "url":"images/avatar.png"
-       },
-       "verified":true
-    },
-    "mediaUrl":"images/nft.jpg",
-    "price":5,
-    "currency":"ETH"
- },
- {
-    "name":"Maple",
-    "user":{
-       "avatar":{
-          "url":"images/avatar.png"
-       },
-       "verified":true
-    },
-    "mediaUrl":"images/nft.jpg",
-    "price":10,
-    "currency":"ETH"
- }];
+export default function Trending({cards}) {
 
   return (
     <Container className={classNames(styles.container)} maxWidth="xl">
@@ -63,9 +13,9 @@ export default function Trending({ cards: [] }) {
       <Select label="this week" placeholder='this week' className={classNames(styles.selectMenu)}><MenuItem>This week</MenuItem></Select>
       </div>
      
-      <Grid container spacing={0} className={classNames(styles.grid)}>
-        {nftCards.map((card, index) => (
-          <Grid item xs={3} sm={6} md={3} key={index}>
+      <Grid container columnSpacing={3} className={classNames(styles.grid)}>
+        {cards.map((card, index) => (
+          <Grid item  xs={3} sm={6} md={3} key={index}>
             <NftCard {...card} />
           </Grid>
         ))}
