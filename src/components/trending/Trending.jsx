@@ -1,22 +1,78 @@
 import React from 'react';
-import { Container, Grid, Select, Typography } from '@mui/material';
-import Card from '../card/Card';
+import styles from './Trending.module.scss';
+import classNames from "classnames";
+import { Container, Grid, Menu, Select, MenuItem } from '@mui/material';
+import NftCard from '../card/Card';
 
-export default function Trending ({ cards = [] }) {
+export default function Trending({ cards: [] }) {
+
+ // const { cards: nftCards } = cards;
+  const nftCards=[ {
+    "name":"Ivy",
+    "user":{
+       "avatar":{
+          "url":"images/avatar.png"
+       },
+       "verified":true
+    },
+    "mediaUrl":"images/nft.jpg",
+    "price":1,
+    "currency":"ETH"
+ },
+ {
+    "name":"Judie",
+    "user":{
+       "avatar":{
+          "url":"images/avatar.png"
+       },
+       "verified":true
+    },
+    "mediaUrl":"images/nft.jpg",
+    "price":2.3,
+    "currency":"ETH"
+ },
+ {
+    "name":"Juniper",
+    "user":{
+       "avatar":{
+          "url":"images/avatar.png"
+       },
+       "verified":true
+    },
+    "mediaUrl":"images/nft.jpg",
+    "price":5,
+    "currency":"ETH"
+ },
+ {
+    "name":"Maple",
+    "user":{
+       "avatar":{
+          "url":"images/avatar.png"
+       },
+       "verified":true
+    },
+    "mediaUrl":"images/nft.jpg",
+    "price":10,
+    "currency":"ETH"
+ }];
+
   return (
-    <Container maxWidth="md">
-      <Typography variant="h5" align="center">Trending</Typography>
-      <Select />
-      <Grid container spacing={2}>
-        {cards.map(card => (
-          <Grid item xs={3} key={card.name}>
-            <Card card={card} />
+    <Container className={classNames(styles.container)} maxWidth="xl">
+      <div className={classNames(styles.containerMenu)}>
+      <h2 className={classNames(styles.heading)}>Trending</h2>
+      <Select label="this week" placeholder='this week' className={classNames(styles.selectMenu)}><MenuItem>This week</MenuItem></Select>
+      </div>
+     
+      <Grid container spacing={0} className={classNames(styles.grid)}>
+        {nftCards.map((card, index) => (
+          <Grid item xs={3} sm={6} md={3} key={index}>
+            <NftCard {...card} />
           </Grid>
         ))}
       </Grid>
     </Container>
   );
-};
+}
 
 
 /*import React from 'react';

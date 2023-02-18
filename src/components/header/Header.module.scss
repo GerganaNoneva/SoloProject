@@ -1,32 +1,68 @@
 @use "../../styles/colors";
 
-//Font searching field
-//font-family: 'Montserrat', sans-serif;
-//font-weight: 400;
-//font-size: 16px;
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@font-face {
+    font-family: 'Montserrat-SemiBold';
+    src: url('../../fonts/Montserrat/static/Montserrat-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
 
-//Font Home and Active buttons
-//font-family: 'Montserrat', sans-serif;
-//font-weight: 600;
-//font-size: 14px;
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../../fonts/Montserrat/static/Montserrat-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
 
-//Font for EXPLORE Button
-//font-family - Laca
-//font-weight: 700
-//font-size: 16px;
+@font-face {
+    font-family: 'Laca';
+    src: url('../../fonts/laca-cufonfonts-webfont/Laca\ Semibold.woff') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
 
-.searchField{
+.container {
+    justify-content: 'space-between';
+    width: '100%';
+    background-color: colors.$background_paper;
+}
+
+.searchContainer{
     background-color: colors.$background_default;
     width: 400px;
     border-radius: 20px;
     display: flex;
     flex-direction: row;
+    font-family: 'Montserrat-Regular' !important;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.searchField {
+    width: 100%;
+    font-family: 'Montserrat-Regular' !important;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.searchField::placeholder {
+    color: colors.$text_secondary !important;
 }
 
 .buttonContainer {
     display: flex;
     flex-direction: column;
     justify-content: end;
+}
+
+.buttonBase {
+    font-family: 'Montserrat-SemiBold' !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+}
+
+.button {
+    font-family: 'Laca' !important;
+    font-weight: 700 !important;
+    font-size: 16px !important;
 }

@@ -1,2 +1,37 @@
 @use "../../styles/colors";
 
+@font-face {
+    font-family: 'Montserrat-ExtraBold';
+    src: url('../../fonts/Montserrat/static/Montserrat-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+.heading{
+    font-family: 'Montserrat-ExtraBold';
+    font-weight: 800;
+    font-size: 48px;
+}
+
+.container {
+    border: 2px solid red;
+    width: 100% !important;
+    background-color: colors.$background_default;
+}
+
+.containerMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.selectMenu{
+    width: 20%;
+    color: white !important;
+}
+
+.grid {
+    border: 2px solid red;
+    justify-content: space-evenly;
+    width: 100% !important;
+}

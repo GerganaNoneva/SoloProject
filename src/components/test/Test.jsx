@@ -9,92 +9,60 @@ import Avatar from "../avatar/Avatar"
 import User from "../user/User"
 import NftCard from "../card/Card"
 import Trending from "../trending/Trending"
-/*
-const cards = [
-   {
-      "name":"Ivy",
-      "user":{
-         "avatar":{
-            "url":"images/avatar.png"
-         },
-         "verified":true
-      },
-      "mediaUrl":"images/nft.jpg",
-      "price":1,
-      "currency":"ETH"
-   },
-   {
-      "name":"Judie",
-      "user":{
-         "avatar":{
-            "url":"images/avatar.png"
-         },
-         "verified":true
-      },
-      "mediaUrl":"images/nft.jpg",
-      "price":2.3,
-      "currency":"ETH"
-   },
-   {
-      "name":"Juniper",
-      "user":{
-         "avatar":{
-            "url":"images/avatar.png"
-         },
-         "verified":true
-      },
-      "mediaUrl":"images/nft.jpg",
-      "price":5,
-      "currency":"ETH"
-   },
-   {
-      "name":"Maple",
-      "user":{
-         "avatar":{
-            "url":"images/avatar.png"
-         },
-         "verified":true
-      },
-      "mediaUrl":"images/nft.jpg",
-      "price":10,
-      "currency":"ETH"
-   }
-];*/
-/*
-const cards=[{
-   name: 'Clock',
-   likes:1000000,
-   mediaUrl: '/images/nft.jpg',
-   user: {
-     avatar: {
-       url: '/images/avatar.png'
-     },
-     verified: true
-   },
-   price: '12.2',
-   currency: 'ETH'
- }]
-*/
 
-const nft = {
-  name: 'Clock',
-  likes:1000000,
-  mediaUrl: '/images/nft.jpg',
-  user: {
-    avatar: {
-      url: '/images/avatar.png'
-    },
-    verified: true
-  },
-  price: '12.2',
-  currency: 'ETH'
-};
-
+const nftCards=[ {
+   "name":"Ivy",
+   "user":{
+      "avatar":{
+         "url":"images/avatar.png"
+      },
+      "verified":true
+   },
+   "mediaUrl":"images/nft.jpg",
+   "price":1,
+   "currency":"ETH"
+},
+{
+   "name":"Judie",
+   "user":{
+      "avatar":{
+         "url":"images/avatar.png"
+      },
+      "verified":true
+   },
+   "mediaUrl":"images/nft.jpg",
+   "price":2.3,
+   "currency":"ETH"
+},
+{
+   "name":"Juniper",
+   "user":{
+      "avatar":{
+         "url":"images/avatar.png"
+      },
+      "verified":true
+   },
+   "mediaUrl":"images/nft.jpg",
+   "price":5,
+   "currency":"ETH"
+},
+{
+   "name":"Maple",
+   "user":{
+      "avatar":{
+         "url":"images/avatar.png"
+      },
+      "verified":true
+   },
+   "mediaUrl":"images/nft.jpg",
+   "price":10,
+   "currency":"ETH"
+}];
 
 export default function Test() {
   return (
     <div className={classNames(styles.wrapper)}>
-       <NftCard {...nft}/>
+      <Trending cards={nftCards}/>
     </div>
   );
 }
@@ -102,5 +70,5 @@ export default function Test() {
 // <Trending cards={cardsInfo}/>
 //      <NftCard {...nft}/>
 
-
+//     <User name="terika77" info="125 items" avatar='images/avatar.png' verified='true'/>
 
