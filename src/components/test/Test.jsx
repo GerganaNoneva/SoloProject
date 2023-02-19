@@ -59,16 +59,31 @@ const nftCards=[ {
    "currency":"ETH"
 }];
 
+const card= {
+   "name":"Ivy",
+   "user":{
+      "avatar":{
+         "url":"images/avatar.png"
+      },
+      "verified":true
+   },
+   "mediaUrl":"images/nft.jpg",
+   "price":1,
+   "currency":"ETH",
+   "timeLeft":500000
+}
+
 export default function Test() {
   return (
     <div className={classNames(styles.wrapper)}>
-      <Trending cards={nftCards}/>
+      <NftCard  {...card}/>
     </div>
   );
 }
 
-// <Trending cards={cardsInfo}/>
+//
 //      <NftCard {...nft}/>
-
+// <Trending cards={nftCards}/>
+//
 //     <User name="terika77" info="125 items" avatar='images/avatar.png' verified='true'/>
 

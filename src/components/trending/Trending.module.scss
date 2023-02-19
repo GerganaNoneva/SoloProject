@@ -7,6 +7,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('../../fonts/Montserrat/static//Montserrat-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
 .heading{
     font-family: 'Montserrat-ExtraBold';
     font-weight: 800;
@@ -18,6 +25,7 @@
     background-color: colors.$background_default;
 }
 
+
 .containerMenu {
     display: flex;
     flex-direction: row;
@@ -27,4 +35,15 @@
 .selectMenu{
     width: 20%;
     color: white !important;
+    font-family: 'Montserrat-Medium' !important;
+    font-size: 14px !important;
+}
+
+.containerGrid{
+    height: 100px;
+    padding: 0 0 0 0 !important;
+}
+
+.gridCont{
+    width: 100% !important;
 }

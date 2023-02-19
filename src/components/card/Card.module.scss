@@ -83,3 +83,46 @@
   color: colors.$secondary_main !important;
   background-color: #1A2E2D !important;
 }
+
+.cardLive {
+  border-radius: 15px !important;
+  background-color: #1A2E2D !important;
+  display: flex;
+  flex-direction: column;
+  width: 339px;
+  height: 443px;
+  padding: 15px;
+}
+
+/*
+.liveContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid green;
+}
+
+.liveBadge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background-color: #d32f2f;
+  border-radius: 50%;
+}
+
+.liveIcon {
+  width: 24px;
+  height: 24px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.liveText {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+*/
