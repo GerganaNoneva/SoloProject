@@ -6,6 +6,7 @@ import millify from 'millify';
 import styles from './Card.module.scss';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import Countdown from 'react-countdown';
+import TimelineDot from '@mui/lab/TimelineDot';
 
 
 export default function NftCard({
@@ -21,15 +22,17 @@ export default function NftCard({
     <>
     {timeLeft ? (
       <Card className={styles.cardLive}>
-      <div className={styles.liveContainer}>
-        <div className={styles.liveBadge}>
-          <div className={styles.liveIcon}></div>
-          <span className={styles.liveText}>LIVE</span>
-        </div>
-        <Countdown date={Date.now() + timeLeft} />
-      </div>
+          
       <Avatar url={avatarUrl} size={40} verified={verified} className={styles.avatar} />
+      <div className={styles.mediaContainer} > 
+      <div className={styles.liveIcon}>
+           <TimelineDot className={styles.dot}> 
+           <span className={styles.liveText}>LIVE</span>
+           </TimelineDot>
+        </div>
+        <Countdown date={Date.now() + timeLeft} className={styles.countdown}/>
         <img className={styles.media} src={mediaUrl} title={name} />
+        </div>
         <div className={styles.details}>
           <div className={styles.info}>
             <p className={styles.title}>{name}</p>
