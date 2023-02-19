@@ -70,7 +70,7 @@ const card= {
    "mediaUrl":"images/nft.jpg",
    "price":1,
    "currency":"ETH",
-   "timeLeft":500000
+   "timeLeft":1000
 }
 
 export default function Test() {

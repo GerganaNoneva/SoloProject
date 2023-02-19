@@ -19,7 +19,7 @@ export default function NftCard({
   timeLeft
 }) {
   return (
-    <>
+    <div className={styles.wrapper}>
     {timeLeft ? (
       <Card className={styles.cardLive}>
           
@@ -62,6 +62,6 @@ export default function NftCard({
         </div>
         </Card>
     )}
-    </>
+    </div>
   );
 }
