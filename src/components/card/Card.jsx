@@ -7,6 +7,7 @@ import styles from './Card.module.scss';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import Countdown from 'react-countdown';
 import TimelineDot from '@mui/lab/TimelineDot';
+import { Circle } from '@mui/icons-material';
 
 
 export default function NftCard({
@@ -25,9 +26,8 @@ export default function NftCard({
           
       <Avatar url={avatarUrl} size={40} verified={verified} className={styles.avatar} />
       <div className={styles.mediaContainer} > 
-        <div className={styles.liveIcon}>
-           <TimelineDot className={styles.dot}> 
-           </TimelineDot>
+        <div className={styles.badge}>
+           <Circle className={styles.dot}></Circle>
            <span className={styles.liveText}>LIVE</span>
         </div>
         <div className={styles.countdown}> 

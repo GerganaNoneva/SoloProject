@@ -102,7 +102,7 @@
   padding: 15px;
 }
 
-.liveIcon {
+.badge {
   border-radius: 10px;
   position: absolute;
   margin: 20px auto auto 20px !important;
@@ -115,18 +115,16 @@
 }
 
 .dot {
-  width: 5px;
-  height: 5px;
-  background-color: black !important;
-  color: black !important;
-  margin: auto auto auto 5px !important;
+  width: 15px !important;
+  height: 15px !important;
+  margin: auto auto auto 10px !important;
 }
 
 .liveText {
   font-family: 'Montserrat-Bold';
   font-weight: 700;
   font-size: 14px;
-  margin: auto auto auto -10px !important;
+  margin: auto auto auto -15px !important;
 }
 
 .countdown {
