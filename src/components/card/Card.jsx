@@ -25,12 +25,14 @@ export default function NftCard({
           
       <Avatar url={avatarUrl} size={40} verified={verified} className={styles.avatar} />
       <div className={styles.mediaContainer} > 
-      <div className={styles.liveIcon}>
+        <div className={styles.liveIcon}>
            <TimelineDot className={styles.dot}> 
-           <span className={styles.liveText}>LIVE</span>
            </TimelineDot>
+           <span className={styles.liveText}>LIVE</span>
         </div>
-        <Countdown date={Date.now() + timeLeft} className={styles.countdown}/>
+        <div className={styles.countdown}> 
+        <Countdown date={Date.now() + timeLeft} className={styles.counter}/>
+        </div>
         <img className={styles.media} src={mediaUrl} title={name} />
         </div>
         <div className={styles.details}>
@@ -63,33 +65,3 @@ export default function NftCard({
     </>
   );
 }
-
-/*
-return (
-  <Card className={styles.card}>
-    {timeLeft ? (
-      <div className={styles.liveContainer}>
-        <div className={styles.liveBadge}>
-          <div className={styles.liveIcon}></div>
-          <span className={styles.liveText}>LIVE</span>
-        </div>
-        <Countdown date={Date.now() + timeLeft} />
-      </div>
-    ) : (
-      <>
-        <Avatar url={avatarUrl} size={40} verified={verified} className={styles.avatar} />
-        <img className={styles.media} src={mediaUrl} title={name} />
-        <div className={styles.details}>
-          <div className={styles.info}>
-            <p className={styles.title}>{name}</p>
-            <p className={styles.price}>{price} {currency}</p>
-          </div>
-          <div className={styles.likesContainer}>
-            <Chip className={styles.likes}
-              label={millify(likes)} color="primary" avatar={<FavoriteIcon className={styles.icon} />} />
-          </div>
-        </div>
-      </>
-    )}
-  </Card>
-);*/
